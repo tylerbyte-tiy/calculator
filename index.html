@@ -6,7 +6,92 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="result">
+
+
+    <form name="frm">
+      <input name="result">
+<br>
+        <input type="button" name="1" value="1" onclick="run1()">
+        <input type="button" name="2" value="2" onclick="run2()">
+        <input type="button" name="3" value="3" onclick="run3()">
+        <input type="button" name="plus" value="+" onclick="runplus()">
+        <br>
+        <input type="button" name="4" value="4" onclick="run4()">
+        <input type="button" name="5" value="5" onclick="run5()">
+        <input type="button" name="6" value="6" onclick="run6()">
+        <input type="button" name="minus" value="-" onclick="runminus()">
+        <br>
+        <input type="button" name="7" value="7" onclick="run7()">
+        <input type="button" name="8" value="8" onclick="run8()">
+        <input type="button" name="9" value="9" onclick="run9()">
+        <input type="button" name="multiply" value="*" onclick="runmultiply()">
+        <br>
+        <input type="button" name="0" value="0" onclick="run0()">
+        <input type="button" name="modulo" value="%" onclick="runmodulo()">
+        <input type="button" name="divide" value="/" onclick="rundivide()">
+        <input type="button" name="=" value="=" onclick="equals()">
+
+      </form>
+
+        <script type="text/javascript">
+
+
+        function run1() {
+          document.frm.result.value += "1";
+        }
+
+        function run2() {
+          document.frm.result.value += "2";
+        }
+        function run3() {
+          document.frm.result.value += "3";
+        }
+        function runplus() {
+          document.frm.result.value += "+";
+        }
+
+        function run4() {
+          document.frm.result.value += "4";
+        }
+        function run5() {
+          document.frm.result.value += "5";
+        }
+        function run6() {
+          document.frm.result.value += "6";
+        }
+        function runminus() {
+          document.frm.result.value += "-";
+        }
+        function run7() {
+          document.frm.result.value += "7";
+        }
+        function run8() {
+          document.frm.result.value += "8";
+        }
+        function run9() {
+          document.frm.result.value += "9";
+        }
+        function runmultiply() {
+          document.frm.result.value += "*";
+        }
+
+        function run0() {
+          document.frm.result.value += "0";
+        }
+        function runmodulo() {
+          document.frm.result.value += "%";
+        }
+        function equals() {
+          var evalu = eval(document.frm.result.value)
+          document.frm.result.value = evalu;
+        }
+
+    </script>
+
+
+
+
+    <!-- <div class="result">
       <p></p>
     </div>
     <div class="">
@@ -67,7 +152,7 @@
 
     <button id="divide" class="operators"
      type="button" name="divide">/</button>
-     </div>
+     </div> -->
 
 
     <script src="main.js" charset="utf-8"></script>
