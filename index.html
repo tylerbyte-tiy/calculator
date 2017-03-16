@@ -7,153 +7,42 @@
   </head>
   <body>
 
-
     <form name="frm">
-      <input name="result">
-<br>
+      <ul>
+      <input name="result"></ul>
+        <ul>
         <input type="button" name="1" value="1" onclick="run1()">
         <input type="button" name="2" value="2" onclick="run2()">
         <input type="button" name="3" value="3" onclick="run3()">
-        <input type="button" name="plus" value="+" onclick="runplus()">
-        <br>
+        <input type="button" name="plus" value="+" onclick="runplus()"></ul>
+        <ul>
         <input type="button" name="4" value="4" onclick="run4()">
         <input type="button" name="5" value="5" onclick="run5()">
         <input type="button" name="6" value="6" onclick="run6()">
-        <input type="button" name="minus" value="-" onclick="runminus()">
-        <br>
+        <input type="button" name="minus" value="-" onclick="runminus()"></ul>
+        <ul>
         <input type="button" name="7" value="7" onclick="run7()">
         <input type="button" name="8" value="8" onclick="run8()">
         <input type="button" name="9" value="9" onclick="run9()">
-        <input type="button" name="multiply" value="*" onclick="runmultiply()">
-        <br>
+        <input type="button" name="multiply" value="*" onclick="runmultiply()"></ul>
+        <ul>
         <input type="button" name="0" value="0" onclick="run0()">
+        <input type="button" name="dot" value="." onclick="rundot()">
         <input type="button" name="modulo" value="%" onclick="runmodulo()">
-        <input type="button" name="divide" value="/" onclick="rundivide()">
-        <input type="button" name="=" value="=" onclick="equals()">
+        <input type="button" name="divide" value="/" onclick="rundivide()"></ul>
+        <ul>
+          <input type="button" name="clear" value="AC" onclick="clear()">
+          <input type="button" name="equals" value="=" onclick="equals()">
+        </ul>
+
 
       </form>
 
-        <script type="text/javascript">
-
-
-        function run1() {
-          document.frm.result.value += "1";
-        }
-
-        function run2() {
-          document.frm.result.value += "2";
-        }
-        function run3() {
-          document.frm.result.value += "3";
-        }
-        function runplus() {
-          document.frm.result.value += "+";
-        }
-
-        function run4() {
-          document.frm.result.value += "4";
-        }
-        function run5() {
-          document.frm.result.value += "5";
-        }
-        function run6() {
-          document.frm.result.value += "6";
-        }
-        function runminus() {
-          document.frm.result.value += "-";
-        }
-        function run7() {
-          document.frm.result.value += "7";
-        }
-        function run8() {
-          document.frm.result.value += "8";
-        }
-        function run9() {
-          document.frm.result.value += "9";
-        }
-        function runmultiply() {
-          document.frm.result.value += "*";
-        }
-
-        function run0() {
-          document.frm.result.value += "0";
-        }
-        function runmodulo() {
-          document.frm.result.value += "%";
-        }
-        function equals() {
-          var evalu = eval(document.frm.result.value)
-          document.frm.result.value = evalu;
-        }
-
-    </script>
+        <!-- <script type="text/javascript">
 
 
 
-
-    <!-- <div class="result">
-      <p></p>
-    </div>
-    <div class="">
-
-    <button id="one" class="numbers"
-    type="button" name="#1">1</button>
-
-    <button id="two" class="numbers"
-    type="button" name="#2">2</button>
-
-    <button id="three" class="numbers"
-    type="button" name="#3">3</button>
-
-    <button id="plus" class="operators"
-    type="button" name="plus">+</button>
-    </div>
-
-    <div class="">
-
-    <button id="four" class="numbers"
-    type="button" name="#4">4</button>
-
-    <button id="five" class="numbers"
-    type="button" name="#5">5</button>
-
-    <button id="six" class="numbers"
-    type="button" name="#6">6</button>
-
-    <button id="minus" class="operators"
-    type="button" name="minus">-</button>
-    </div>
-
-    <div class="">
-
-    <button id="seven" class="numbers"
-    type="button" name="#7">7</button>
-
-    <button id="eight" class="numbers"
-    type="button" name="#8">8</button>
-
-    <button id="nine" class="numbers"
-    type="button" name="#9">9</button>
-
-    <button id="multiply" class="operators"
-    type="button" name="multiply">*</button>
-    </div>
-
-    <div class="">
-
-    <button id="zero" class="numbers"
-    type="button" name="#0">0</button>
-
-    <button id="equals" class="operators"
-     type="button" name="equals">=</button>
-
-    <button id="modulo" class="operators"
-     type="button" name="modulo">%</button>
-
-    <button id="divide" class="operators"
-     type="button" name="divide">/</button>
-     </div> -->
-
+    </script> -->
 
     <script src="main.js" charset="utf-8"></script>
     <script src="buttons.js" charset="utf-8"></script>

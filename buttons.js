@@ -1,100 +1,58 @@
-//
-//
-// 
-// var buttonOne = document.getElementById('one')
-//
-// buttonOne.addEventListener('click', function (){
-//   console.log(1);
-// });
-//
-// var buttonTwo = document.getElementById('two')
-//
-// buttonTwo.addEventListener('click', function (){
-//   console.log(2);
-// });
-//
-// var buttonThree = document.getElementById('three')
-//
-// buttonThree.addEventListener('click', function (){
-//   console.log(3);
-// });
-//
-// var buttonFour = document.getElementById('four')
-//
-// buttonFour.addEventListener('click', function (){
-//   console.log(4);
-// });
-//
-// var buttonFive = document.getElementById('five')
-//
-// buttonFive.addEventListener('click', function (){
-//   console.log(5);
-// });
-//
-// var buttonSix = document.getElementById('six')
-//
-// buttonSix.addEventListener('click', function (){
-//   console.log(6);
-// });
-//
-// var buttonSeven = document.getElementById('seven')
-//
-// buttonSeven.addEventListener('click', function (){
-//   console.log(7);
-// });
-//
-// var buttonEight = document.getElementById('eight')
-//
-// buttonEight.addEventListener('click', function (){
-//   console.log(8);
-// });
-//
-// var buttonNine = document.getElementById('nine')
-//
-// buttonNine.addEventListener('click', function (){
-//   console.log(9);
-// });
-//
-// var buttonZero = document.getElementById('zero')
-//
-// buttonZero.addEventListener('click', function (){
-//   console.log(0);
-// });
-//
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-// var buttonPlus = document.getElementById('plus')
-//
-// buttonPlus.addEventListener('click', function (){
-//   console.log('+');
-// });
-//
-// var buttonMinus = document.getElementById('minus')
-//
-// buttonMinus.addEventListener('click', function (){
-//   console.log('-');
-// });
-//
-// var buttonMultiply = document.getElementById('multiply')
-//
-// buttonMultiply.addEventListener('click', function (){
-//   console.log('*');
-// });
-//
-// var buttonDivide = document.getElementById('divide')
-//
-// buttonDivide.addEventListener('click', function (){
-//   console.log('/');
-// });
-//
-// var buttonModulo = document.getElementById('modulo')
-//
-// buttonModulo.addEventListener('click', function (){
-//   console.log('%');
-// });
-//
-// var buttonEquals = document.getElementById('equals')
-//
-// buttonEquals.addEventListener('click', function (){
-//   console.log('=');
-// });
+function run1() {
+  document.frm.result.value += "1";
+}
+
+function run2() {
+  document.frm.result.value += "2";
+}
+function run3() {
+  document.frm.result.value += "3";
+}
+function runplus() {
+  document.frm.result.value += "+";
+}
+
+function run4() {
+  document.frm.result.value += "4";
+}
+function run5() {
+  document.frm.result.value += "5";
+}
+function run6() {
+  document.frm.result.value += "6";
+}
+function runminus() {
+  document.frm.result.value += "-";
+}
+function run7() {
+  document.frm.result.value += "7";
+}
+function run8() {
+  document.frm.result.value += "8";
+}
+function run9() {
+  document.frm.result.value += "9";
+}
+function runmultiply() {
+  document.frm.result.value += "*";
+}
+
+function run0() {
+  document.frm.result.value += "0";
+}
+function rundivide() {
+  document.frm.result.value += "/";
+}
+function rundot() {
+  document.frm.result.value += ".";
+}
+
+function runmodulo() {
+  document.frm.result.value += "%";
+}
+function runequals() {
+  document.frm.result.value = "=";
+}
+function runclear() {
+  document.frm.result.value = "clear";
+}
