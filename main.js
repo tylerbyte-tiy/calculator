@@ -3,26 +3,36 @@ const calc = (function() {
   var inputString = "";
 
   const add = function(a, b) {
-    return a + b;
+    let sum = a + b;
+    sum = Math.floor(sum*10000000000)/10000000000;
+    return sum;
   };
 
   const subtract = function(a, b) {
-    return a - b;
+    let difference = a - b;
+    difference = Math.floor(difference*10000000000)/10000000000;
+    return difference;
   };
 
   const multiply = function(a, b) {
-    return a * b;
+    let product = a * b;
+    product = Math.floor(product*10000000000)/10000000000;
+    return product;
   };
 
   const divide = function(a, b) {
-    return a / b;
+    let quotient = a / b;
+    quotient = Math.floor(quotient*10000000000)/10000000000;
+    return quotient;
   };
 
   const modulus = function(a, b) {
-    return a % b;
+    let remainder = a % b;
+    remainder = Math.floor(remainder*10000000000)/10000000000;
+    return remainder;
   };
 
-  const invert = function(a, b) {
+  const negative = function(a, b) {
     return a * -1;
   };
 
@@ -103,11 +113,11 @@ const calc = (function() {
     for(let i = 0; i < buttons.length; i++) {
       let button = buttons[i];
       button.addEventListener("click", function() {
-        let vallue = document.querySelector(".display").innerHTML;
+        let value = document.querySelector(".display").innerHTML;
         let currentNum = parseFloat(value);
-        let invertNum = invert(currentNum);
-        document.querySelector(".display").innerHTML = invertNum;
-        inputString = invertNum;
+        let negativeNum = negative(currentNum);
+        document.querySelector(".display").innerHTML = negativeNum;
+        inputString = negativeNum;
       });
     };
   };
@@ -123,7 +133,7 @@ const calc = (function() {
     multiply: multiply,
     divide: divide,
     modulus: modulus,
-    invert: invert,
+    negative: negative,
     numToString: numToString,
     operToString: operToString,
     equalButton: equalButton,
@@ -131,3 +141,4 @@ const calc = (function() {
   };
 
 })();
+window.onload = calc;
