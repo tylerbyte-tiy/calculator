@@ -1,0 +1,28 @@
+body{
+  color: tan
+
+}
+
+.display{
+  position: relative;
+  border: solid black 1px;
+  height: 20px;
+  width: 180px;
+  left: 6.4%
+  
+}
+.number{
+  color: blue;
+}
+
+.operator{
+  color: red;
+}
+
+.unaryOperator{
+  color: red;
+}
+
+.autoClear{
+  text-decoration: bold;
+}
