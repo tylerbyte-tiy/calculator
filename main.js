@@ -65,4 +65,51 @@ const calc = (function() {
     inputString = result;
     console.log(result);
   };
+
+  const calculate = function(a, b, cb) {
+    return cb(a, b);
+    console.log(cb(a, b));
+  };
+
+  function addListenerForEquals() {
+    const button = document.querySelector("#equalButton");
+    button.addEventListener("click", function() {
+      equalButton(button.value);
+    });
+  };
+
+  function addListenerForNumbers() {
+    const buttons = document.querySelectorAll(".number")
+    for(let i =0; i < buttons.length; i++) {
+      let button = buttons[i];
+      button.addEventListener("click", function() {
+        numToString(button.value);
+      });
+    };
+  };
+
+  function addListenerForOperators() {
+    const buttons = document.querySelectorAll(".operator")
+    for(let i =0; i < buttons.length; i++) {
+      let button = buttons[i];
+      button.addEventListener("click", function() {
+        operToString(button.value);
+      });
+    };
+  };
+
+  function addListenerForUnaryOperators() {
+    const buttons = document.querySelectorAll(".unaryOperator")
+    for(let i = 0; i < buttons.length; i++) {
+      let button = buttons[i];
+      button.addEventListener("click", function() {
+        let vallue = document.querySelector(".display").innerHTML;
+        let currentNum = parseFloat(value);
+        let invertNum = invert(currentNum);
+        document.querySelector(".display").innerHTML = invertNum;
+        inputString = invertNum;
+      });
+    };
+  };
+  
 })
