@@ -44,7 +44,25 @@ const calc = (function() {
     let a = parseFloat(input[0]);
     let b = parseFloat(input[2]);
 
-    
-
-  }
+    let operator
+    if (input[1] == "+") {
+      operator = add;
+    }
+    else if (input[1] == "-") {
+      operator = subtract;
+    }
+    else if (input[1] == "*") {
+      operator = multiply;
+    }
+    else if (input[1] == "/") {
+      operator = divide;
+    }
+    else if (input[1] == "%") {
+      operator = modulus;
+    }
+    let result = calculate(a, b, operator);
+    document.querySelector(".display").innerHTML = result;
+    inputString = result;
+    console.log(result);
+  };
 })
