@@ -111,5 +111,23 @@ const calc = (function() {
       });
     };
   };
-  
-})
+
+  addListenerForEquals();
+  addListenerForNumbers();
+  addListenerForOperators();
+  addListenerForUnaryOperators();
+
+  return {
+    add: add,
+    subtract: subtract,
+    multiply: multiply,
+    divide: divide,
+    modulus: modulus,
+    invert: invert,
+    numToString: numToString,
+    operToString: operToString,
+    equalButton: equalButton,
+    calculate: calculate
+  };
+
+})();
