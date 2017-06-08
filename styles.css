@@ -1,28 +1,61 @@
+#calc{
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+#button{
+  /*border: 5px solid blue;*/
+}
+#modulus{
+  background-color: lightgray;
+  color: black;
+}
 body{
-  color: tan
-
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 5px solid black;*/
 }
 
 .display{
-  position: relative;
+  /*position: relative;*/
   border: solid black 1px;
-  height: 20px;
-  width: 180px;
-  left: 6.4%
-  
+  height: 60px;
+  width: 500px;
+  left: 6.4%;
+  font-size: 3.5em;
+  background-color: gray;
+  color: white;
+
 }
 .number{
-  color: blue;
+  color: black;
 }
 
 .operator{
-  color: red;
+  color: black;
+  background-color: orange;
+  color: white;
 }
-
+.equals{
+  background-color: orange;
+  color: white;
+}
 .unaryOperator{
-  color: red;
+  color: black;
+  background-color: lightgray;
 }
 
 .autoClear{
   text-decoration: bold;
+  background-color: lightgray;
+}
+
+.number, .operator, .unaryOperator, .autoClear, .equals{
+  padding: 30px;
+  font-size: 2em;
+}
+.button{
+
 }
